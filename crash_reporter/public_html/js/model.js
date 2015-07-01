@@ -40,5 +40,4 @@ function Driver(fn, ln, addr, city, state, zip, ph, email, dob, dln, dls, dlx, i
     this.passengers = [];    
 }
 
-function 
 
