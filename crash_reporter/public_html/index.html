@@ -4,21 +4,25 @@
         <title>Crash Reporter</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     </head>
     <body>
         <h1>Crash Reporter - &lt;firstName&gt;</h1>
-        <nav>
-            <ul>
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">New Report</a></li>
-                <li><a href="#">History</a></li>
+                <li><a href="#new" onclick="open_url('views', 'new.html', 'content');">New Report</a></li>
+                <li><a href="#history" onclick="open_url('views', 'history.html', 'content');">History</a></li>
             </ul>
         </nav>
-        <div class="content">
-            <button>New Crash Report</button>
-            <button>Open Last Saved Report</button>
-            <button>Manage My Profile</button>
-            <button>Manage My Vehicles</button>
+        <div id="content">
+            <button class="btn">New Crash Report</button>
+            <button class="btn">Open Last Saved Report</button>
+            <button class="btn">Manage My Profile</button>
+            <button class="btn">Manage My Vehicles</button>
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </html>

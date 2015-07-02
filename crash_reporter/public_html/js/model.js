@@ -1,6 +1,7 @@
-//Get existing profile or create and empty object if not
-//var appUser = JSON.parse(localStorage.getItem('appUser')) || {};
-
+function AppUser(fn, ln, addr, city, state, zip, ph, email, dob, dln, dls, dlx, iCo, iId, iPh){
+    this.profile = new Driver(fn, ln, addr, city, state, zip, ph, email, dob, dln, dls, dlx, iCo, iId, iPh);
+    this.reports = [];
+}
 function Occupant(fn, ln, addr, city, state, zip, ph, email, dob){
     this.firstName = fn;
     this.lastName = ln;
