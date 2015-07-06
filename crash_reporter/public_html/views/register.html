@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <h1>Crash Reporter</h1>
+    <div id="content">
+        <div id="welcome">
+            <h3>Welcome to Crash Reporter!</h3>
+            <p>Fill in the fields below and select Create User to continue.</p>
+        </div>
+        <div id="newUserForm">
+            <form>
+                <label>First Name:</label><input type="text" id="fname" required><br>
+                <label>Last Name:</label><input type="text" id="lname" required><br>
+                <label>Address:</label><input type="text" id="addr" required><br>
+                <label>City:</label><input type="text" id="city" required><br>
+                <label>State:</label><input type="text" id="state" required><br>
+                <label>Zip Code:</label><input type="text" id="zip" required><br>
+                <label>Phone:</label><input type="text" id="phone" required><br>
+                <label>Email:</label><input type="email" id="email" required><br>
+                <label>DOB:</label><input type="text" id="dob" required><br>
+                <label>Driver Lic. No.:</label><input type="text" id="dlNum" required><br>
+                <label>DL State:</label><input type="text" id="dlState" required><br>
+                <label>Expiration:</label><input type="text" id="dlExpire" required><br>
+                <label>Insurance Co.:</label><input type="text" id="insCo" required><br>
+                <label>Insurance Policy No.:</label><input type="text" id="insId" required><br>
+                <label>Insurance Phone</label><input type="text" id="insPhone" required><br><br>
+                <button type="submit" class="btn btn-primary" onclick="CRASHAPP.CONTROLLER.createUser()">Create User</button>
+            </form>
+        </div>
+    </div>
+</div>
