@@ -1,6 +1,7 @@
-//Get existing profile or create and empty object if not
-//var appUser = JSON.parse(localStorage.getItem('appUser')) || {};
-
+function AppUser(fn, ln, addr, city, state, zip, ph, email, dob, dln, dls, dlx, iCo, iId, iPh){
+    this.profile = new Driver(fn, ln, addr, city, state, zip, ph, email, dob, dln, dls, dlx, iCo, iId, iPh);
+    this.reports = [];
+}
 function Occupant(fn, ln, addr, city, state, zip, ph, email, dob){
     this.firstName = fn;
     this.lastName = ln;
@@ -40,4 +41,38 @@ function Driver(fn, ln, addr, city, state, zip, ph, email, dob, dln, dls, dlx, i
     this.passengers = [];    
 }
 
+function Vehicle (plateNum, year, make, model) {
+    //
+    this.plateNum = plateNum;
+    this.year = year;
+    this.make = make;
+    this.model = model;
+    this.damaged = false;
+    this.damageDesc = "";
+}
 
+function Report (userDriver) {
+    this.name = name;
+    this.userDriver = userDriver;
+    this.otherDrivers = [];
+    this.witnesses = [];
+    this.responders = [];
+}
+
+function Witness (fn, ln, addr, email, ph, stmt) {
+    this.firstName = fn;
+    this.lastName = ln;
+    this.address = addr;
+    this.email = email;
+    this.phone = ph;
+    this.statement = stmt;
+}
+
+function Responder (title, fn, ln, org, orgPh, rptNum) {
+    this.title = title;
+    this.firstname = fn;
+    this.lastname = ln;
+    this.organization = org;
+    this.orgPhone = orgPh;
+    this.reportNum = rptNum;
+}
